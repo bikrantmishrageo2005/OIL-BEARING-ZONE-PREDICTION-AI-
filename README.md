@@ -1,2 +1,7 @@
 # OIL-BEARING-ZONE-PREDICTION-AI-
 A Geo-AI project that uses synthetic seismic attributes to classify potential oil-bearing zones. The dataset is generated using basic geophysical rules, and a Random Forest model is trained to detect oil vs non-oil regions. Includes visualizations, feature importance, and evaluation.
+
+This project uses a synthetic seismic dataset to explore how machine learning can help identify possible oil-bearing zones. I generated realistic seismic attributes such as amplitude, frequency, impedance, density, and seismic velocity to simulate subsurface behavior. Based on basic geophysical rules (for example, high impedance combined with moderate amplitude and slightly lower frequency often indicates hydrocarbon zones), I created a target label to classify each sample as oil-bearing or non-oil-bearing.
+
+For the model, I used a Random Forest classifier because it handles non-linear geological relationships well and gives clear feature importance. The workflow includes data creation, preprocessing, a simple train–test split, model training, evaluation, and interpretation of results. I also added geological visualizations such as a correlation heatmap and an impedance–amplitude scatter plot to understand the clustering between oil and non-oil zones. This project is an early attempt to combine seismic attributes with AI, and the next step is to replace synthetic data with actual seismic logs or well-log data.
+
